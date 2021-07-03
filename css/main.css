@@ -5,7 +5,7 @@ body{
     font-weight: 400;
     line-height: 1.4;
     font-family: 'Nanum Gothic', sans-serif;
-    height: 3000px;
+    height: 6000px;
 }
 img{
     display: block;
@@ -579,5 +579,109 @@ header .badges .badge{
     top: 0;
     left: 0;
 }
+.youtube .inner{
+    height: 700px;
+    
+}
+.youtube .floating1{
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.youtube .floating2{
+    position: absolute;
+    top: 350px;
+    left: 150;
+}
+
+
+/* SEASON PRODUCT */
+.season-product{
+    background-image: url('../images/season_product_bg.jpg');
+}
+.season-product .inner{
+    height: 400px;
+}
+.season-product .floating3{
+    position: absolute;
+    top: -200px;
+    right: 0;
+}
+.season-product .text-group{
+    position: absolute;
+    top: 110px;
+    right: 100px;
+}
+.season-product .text-group .title{
+    margin-bottom: 10px;
+}
+.season-product .text-group .description{
+    margin-bottom: 15px;
+}
+.season-product .text-group .more{}
+
+
+
+/* RESERVE COFFEE */
+.reserve-coffee{
+    background-image: url('../images/reserve_bg.jpg');
+    /* background-image 는 repeat이라는 속성의 기본값이 반복 */
+}
+.reserve-coffee .inner{
+    height: 400px;
+}
+.reserve-coffee .reserve-logo{
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+.reserve-coffee .text-group{
+    position: absolute;
+    top: 124px;
+    left: 208px;
+}
+.reserve-coffee .product{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* PICK YORE FAVORITE */
+.pick-your-favorite{
+    background-image: url('../images/favorite_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* 패럴랙스? */
+    /* 스크롤이 될때 배경의 이미지가 같이 스크롤이 되지 않고 고정(뷰포트) */
+    background-attachment: fixed;
+
+    /* cover - 배경의 이미지를 요소의 더 넓은 너비에 맞춰서 출력 */
+    background-size: cover;
+}
+.pick-your-favorite .inner{
+    padding: 110px 0;
+}
+.pick-your-favorite .text-group{
+    margin-left: 100px;
+    display: flex;
+
+    /* 가로의 너비를 제한 */
+    width: 362px;
+
+    /* 플렉스 속성에서 줄바꿈이 될 수 있도록 */
+    flex-wrap: wrap;
+
+    /* 요소의 오른쪽으로 정렬 */
+    justify-content: flex-end;
+    
+}
+.pick-your-favorite .text-group .title{
+    margin-bottom: 40px;
+}
+.pick-your-favorite .text-group .description{
+    margin-bottom: 40px;
+}
+
 
 
