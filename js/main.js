@@ -117,3 +117,25 @@ floatingObject('.floating2', 0.5, 15);
 floatingObject('.floating3', 1.5, 20);
 
 
+// scrollMagic
+
+const spyEls = document.querySelectorAll('section.scroll-spy');
+spyEls.forEach(function(spyEl) {
+    // Scene - 감시하는 옵션을 지정
+    // setClassToggle - class를 지정(토글처럼 넣었다 뺐다 제어)
+    // addTo - 컨트롤러 개념
+    new ScrollMagic
+        .Scene({
+            triggerElement: spyEl,   // 보여짐의 여부를 감시할 요소를 저장
+            triggerHook: 0.8,
+        })
+        .setClassToggle(spyEl, 'show')
+        .addTo(new ScrollMagic.Controller()); 
+});
+
+
+
+
+
+
+
